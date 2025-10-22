@@ -1,5 +1,5 @@
 # raaj_bmwparameters_py
-
+## 🎯️ Function of the Parameter Node
 This package simulates a BMW car showroom where you can set parameters
 such as budget, car model, color, loan years, bank, and downpayment.\
 The node calculates the **monthly loan installment** based on your car
@@ -121,40 +121,41 @@ While `buycar_param_node` is running in **Terminal 1**, open a new
 
 ## 📦 Launching with a Launch File
 
-   Simply run in **Terminal 1**:
+Simply run in **Terminal 1**:
 
-    ```
-    ros2 launch raaj_bmwparameters_py bmw_parameters_launch.py
-    ```
+```
+ros2 launch raaj_bmwparameters_py bmw_parameters_launch.py
+```
 
 Then in **Terminal 2**, repeat the changing parameters steps of
-(i), (ii) and (iii) as shown above. **Note** that node name now is 
+(i), (ii), and (iii) as shown above. **Note** that node name now is
 `custom_buycar_param_node`
+
 ------------------------------------------------------------------------
 
 ## 📝 Notes (Post Presentation)
 
--   Currently, the budget range is `120,000 – 600,000`.\
-    But logically, a **higher budget** should not be an issue.\
-    Only a **minimum limit** of RM120,000 is necessary.
+-   Currently, the budget range is `120,000 – 600,000`. But logically, a
+    **higher budget** should not be an issue. Only a **minimum limit** of
+    RM120,000 is necessary.
 
 Before (with upper and lower budget limits):
 
-    ```
+```
     if not (120_000 <= value <= 600_000):
 	self.get_logger().error(
 	    f'Budget RM{value:,} is out of range (RM120,000 - RM600,000). Rejecting parameter.'
 	)
-    ```
+```
 
 Can update to:
 
-    ```
+```
     if value < 120_000:
 	self.get_logger().error(
 	    f'Budget RM{value:,} is below the minimum (RM120,000). Rejecting parameter.'
 	) 
-    ```
+```
 
 ### 🔮 Next Steps (to try personally)
 
