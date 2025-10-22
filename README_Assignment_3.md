@@ -101,19 +101,19 @@ While `traction_node` is running in **Terminal 1**, open a new
    folder: **src/raaj_tyregrip_base/config**.
    
 2. Load the file using: 
-
-   ```
+ 
+	```
     ros2 run raaj_tyregrip_base traction_node --ros-args --params-file ~/ros2_ws_assignment1/src/raaj_tyregrip_base/config/uhp_snow.yaml
-    ```
+	```
     
 **Alternatively**
 
-While `traction_node` is running in **Terminal 1**, open a new
-**Terminal (2)** and:
+   While `traction_node` is running in **Terminal 1**, open a new
+   **Terminal (2)** and:
 
 1. Save current parameters using command:
 
-For example:
+   For example:
 
     ```
     ros2 param dump /traction_node > ~/ros2_ws_assignment1/src/raaj_tyregrip_base/config/tyre_weather.yaml
