@@ -13,7 +13,7 @@ message (result_message) confirms that the song has finished.
 
 PlaySong.action was created in raaj_action_interfaces. The structure 
 of the packages for this assignment are shown below:
-
+```
 ├── raajaction_musicplayer_py/
 │   ├── raajaction_musicplayer_py/
 │   │   ├── music_player_server.py
@@ -32,7 +32,7 @@ of the packages for this assignment are shown below:
     ├── src/
     ├── CMakeLists.txt
     └── package.xml
-
+```
 
 -   **Executable-server:** `music_server`\
     **Executable-client:** `music_client`\
