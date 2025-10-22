@@ -55,13 +55,13 @@ Parameters:\
 
 1.  Compile the package:
 
-    ``` bash
+    ```
     colcon build --packages-select comp_raaj_bmwshowroom_srvcli
     ```
 
 2.  Source your workspace:
 
-    ``` bash
+    ``` 
     source ~/.bashrc
     ```
 
@@ -69,30 +69,30 @@ Parameters:\
  
     **Standalone (EXECUTABLE)**
     
-        ***Terminal 1:***
-    ``` bash
+    ***Terminal 1:***
+    ```
     ros2 run comp_raaj_bmwshowroom_srvcli car_server
     ```
-        ***Terminal 2:***
-    ``` bash
+    ***Terminal 2:***
+    ```
     ros2 run comp_raaj_bmwshowroom_srvcli car_client
     ```
     
     **Composable (PLUGIN)**
     
-        ***Terminal 1:***
+    ***Terminal 1:***
         
-    ``` bash
+    ```
     ros2 run rclcpp_components component_container
     ```
-        ***Terminal 2:***
+    ***Terminal 2:***
         
-    ``` bash
+    ```
     ros2 component load /ComponentManager comp_raaj_bmwshowroom_srvcli comp_raaj_bmwshowroom_srvcli::BuyCarServer
     ```
     wait for this component to load, then
 
-    ``` bash
+    ```
     ros2 component load /ComponentManager comp_raaj_bmwshowroom_srvcli comp_raaj_bmwshowroom_srvcli::BuyCarClient
     ```
     
@@ -114,7 +114,7 @@ So in **Terminal (2)** or **Terminal 3** set parameters:
   
 1.  Set parameters value (with example):
 
-    ``` bash
+    ```
     ros2 param set /buycar_server budget 300000
     ros2 param set /buycar_server car_model "BMW 320i Sport"
     ros2 param set /buycar_server car_color blue
@@ -122,10 +122,10 @@ So in **Terminal (2)** or **Terminal 3** set parameters:
     ros2 param set /buycar_server bank maybank
     ros2 param set /buycar_server downpayment 40000
     ```
-2.  Can also load the Server component with the parameters straight away
+2.  Can also load the Server component with all the parameters straight away
     (with example):
 
-    ``` bash
+    ```
     ros2 component load /ComponentManager comp_raaj_bmwshowroom_srvcli comp_raaj_bmwshowroom_srvcli::BuyCarServer -p loan_years:=9 -p bank:=maybank -p car_color:=black -p downpayment:=45000 -p budget:=450000 -p car_model:="BMW 2 Series Gran Coupe"
     ```
     
@@ -139,7 +139,7 @@ So in **Terminal (2)** or **Terminal 3** set parameters:
 
 1. Load it using the command:
 
-    ``` bash
+    ```
     ros2 param load /buycar_server ~/ros2_ws_assignment1/src/comp_raaj_bmwshowroom_srvcli/config/comp_bmw.yaml
     ```
     
