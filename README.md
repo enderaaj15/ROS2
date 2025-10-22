@@ -21,6 +21,7 @@ colors for fun.
 Setting budget will give you list of car models available within your 
 budget.
 
+```
 └── comp_raaj_bmwshowroom_srvcli/
     ├── src/
     │   ├── bmw_server.cpp
@@ -32,6 +33,7 @@ budget.
     ├── package.xml
     ├── LICENSE
     └── README.md
+```
 
 -   **Package name:** `comp_raaj_bmwshowroom_srvcli`\
 -   **Node names:** `buycar_server`\
@@ -88,7 +90,7 @@ Parameters:\
     ``` bash
     ros2 component load /ComponentManager comp_raaj_bmwshowroom_srvcli comp_raaj_bmwshowroom_srvcli::BuyCarServer
     ```
-        ~~wait for this component to load~~, then
+       ~~wait for this component to load~~, then
 
     ``` bash
     ros2 component load /ComponentManager comp_raaj_bmwshowroom_srvcli comp_raaj_bmwshowroom_srvcli::BuyCarClient
