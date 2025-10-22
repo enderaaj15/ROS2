@@ -36,13 +36,13 @@ budget.
 ```
 
 -   **Package name:** `comp_raaj_bmwshowroom_srvcli`
--   **Node names:** `buycar_server`
+-   **Node names:** `buycar_server`  
                     `buycar_client`
--   **Component names:** `comp_raaj_bmwshowroom_srvcli::BuyCarServer`
+-   **Component names:** `comp_raaj_bmwshowroom_srvcli::BuyCarServer`  
                          `comp_raaj_bmwshowroom_srvcli::BuyCarClient`
--   **Executables:** `car_server`
+-   **Executables:** `car_server`  
                      `car_client`
--   **Source codes:** `buybmw_server.cpp`
+-   **Source codes:** `buybmw_server.cpp`  
                       `buybmw_client.cpp`
 -   **Config file:** `comp_bmw.yaml`
 
