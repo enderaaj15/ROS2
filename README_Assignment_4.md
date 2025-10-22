@@ -35,11 +35,11 @@ of the packages for this assignment are shown below:
 ```
 
 -   **Executable-server:** `music_server`\
-    **Executable-client:** `music_client`\
--   **PlaySong.action:** - **Goal:** `"song_name"`\
-                	 - **Goal:** `"skip_current"`\ 
-			 - **Result:** `"result_message"`\
-			 - **Feedback:** `"progress_percent"`\
+-   **Executable-client:** `music_client`\
+-   **PlaySong.action:**  *Goal:* `"song_name"`\
+                	      **Goal:** `"skip_current"`\ 
+			              **Result:** `"result_message"`\
+			              **Feedback:** `"progress_percent"`\
 
 ------------------------------------------------------------------------
 
