@@ -101,31 +101,31 @@ While `music_server` is running in **Terminal 1**, open a new
 2. However (**When there is a song playing**), this is where it gets 
    interesting.
    
-**(a) Send another goal "skip_current: false" to reject song change** 
+   **(a) Send another goal "skip_current: false" to reject song change** 
         
-While **Terminal 1** is still running the music_server, lets play a song 
-in **Terminal 2**:
+   While **Terminal 1** is still running the music_server, lets play a song 
+   in **Terminal 2**:
 
-    ```
-    ros2 action send_goal /play_song raaj_action_interfaces/action/PlaySong "{song_name: Despacito - Luis Fonsi}"
-    ```
+	```
+	ros2 action send_goal /play_song raaj_action_interfaces/action/PlaySong "{song_name: Despacito - Luis Fonsi}"
+	```
     
-Then in **Terminal 3**, try requesting a song change by running this:
+   Then in **Terminal 3**, try requesting a song change by running this:
    
-    ```
-    ros2 action send_goal /play_song raaj_action_interfaces/action/PlaySong "{song_name: Blinding Lights - The Weeknd, skip_current: false}"
-    ```
+	```
+	ros2 action send_goal /play_song raaj_action_interfaces/action/PlaySong "{song_name: Blinding Lights - The Weeknd, skip_current: false}"
+	```
     
-It will reject the request and not play the song. To accept song change:
+   It will reject the request and not play the song. To accept song change:
  
-**(b) Send "skip_current: true" to accept song change**
+   **(b) Send "skip_current: true" to accept song change**
         
     ```
     ros2 action send_goal /play_song raaj_action_interfaces/action/PlaySong "{song_name: I Had Some Help - Morgan Wallen, skip_current: true}"
     ```
 
-This will Abort whatever song that was playing and accept to start 
-playing this new song request.
+   This will Abort whatever song that was playing and accept to start 
+   playing this new song request.
 
 
 ------------------------------------------------------------------------
@@ -135,7 +135,7 @@ playing this new song request.
 1. Open **another Terminal** and use the command below to stop the song:
 
     ```
-    ros2 service call /play_song/_action/cancel_goal action_msgs/srv/CancelGoal "{}"
+	ros2 service call /play_song/_action/cancel_goal action_msgs/srv/CancelGoal "{}"
     ```
     
 ------------------------------------------------------------------------
