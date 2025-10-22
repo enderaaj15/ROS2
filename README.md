@@ -90,7 +90,7 @@ Parameters:\
     ``` bash
     ros2 component load /ComponentManager comp_raaj_bmwshowroom_srvcli comp_raaj_bmwshowroom_srvcli::BuyCarServer
     ```
-       ~~wait for this component to load~~, then
+       ~wait for this component to load~, then
 
     ``` bash
     ros2 component load /ComponentManager comp_raaj_bmwshowroom_srvcli comp_raaj_bmwshowroom_srvcli::BuyCarClient
