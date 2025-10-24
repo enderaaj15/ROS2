@@ -129,7 +129,7 @@ Can also load parameters using .yaml file in **Terminal 3**:
 
 ------------------------------------------------------------------------
 
-### 🖥️ Monitoring Parameters
+## 🖥️ Monitoring Parameters
 
 There are a total of 6 parameters that will be monitored. When set 
 successfully, the `bmw_parameters_monitoring` will show an update with 
@@ -146,7 +146,7 @@ an example as shown in the table below:
 
 ------------------------------------------------------------------------
 
-### 🔢️↔️ Parameters Ranges Allowed
+## 🔢️↔️ Parameters Ranges Allowed
 ### (i) When setting individual parameters:
 
 **`downpayment`**: (int)  
@@ -183,6 +183,6 @@ budget >= car price
 
 ------------------------------------------------------------------------
 
-### 🔮 Next Steps (to try personally)
+## 🔮 Next Steps (to try personally)
 
 -   Monitor plugin changes when loading plugins
