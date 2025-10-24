@@ -131,9 +131,9 @@ Can also load parameters using .yaml file in **Terminal 3**:
 
 ### 🖥️ Monitoring Parameters
 
-There are a total of 6 parameters when set successfully, the 
-`bmw_parameters_monitoring` will show an update as shown in the table
-below:
+There are a total of 6 parameters that will be monitored. When set 
+successfully, the `bmw_parameters_monitoring` will show an update with 
+an example as shown in the table below:
 
 | Parameter | Description | bmw_parameters_monitoring update in Terminal |
 | :---: | :--- | :--- |
@@ -146,7 +146,42 @@ below:
 
 ------------------------------------------------------------------------
 
-### (iv) Parameters Ranges Allowed
+### 🔢️↔️ Parameters Ranges Allowed
+### (i) When setting individual parameters:
+
+**`downpayment`**: (int)  
+ \>= 0  
+
+**`budget`**: (int)  
+ \>= 120000  
+
+**`car_model`** (catalog with car prices as reference): (string)  
+{"BMW 118i", 150000}, {"BMW 116i", 120000},
+{"BMW 218i Active Tourer", 180000}, {"BMW X1 sDrive18i", 190000},
+{"BMW 218i Gran Coupe Sport", 241000}, {"BMW 320i Sport", 265800},
+{"BMW X3 20 xDrive M Sport", 320800}, {"BMW 530i M Sport", 399800},
+{"BMW 330i M Sport", 340200}, {"BMW 2 Series Gran Coupe", 250000},
+{"BMW X1", 260000}, {"BMW 3 Series Sedan", 300000},
+{"BMW X4", 380000}, {"BMW Z4", 400000}, {"BMW i4", 430000},
+{"BMW i5", 460000}, {"BMW X5", 480000}, {"BMW X6", 550000},
+{"BMW M340i xDrive", 580000}, {"BMW 420i Coupe", 255000},
+{"BMW X2", 280000}, {"BMW 330Li M Sport", 320000}  
+
+**`car_color`**: (string)  
+{"black", "white", "blue", "silver"}  
+
+**`loan_years`**: (int)  
+Between 5 and 9  
+
+**`bank`**: (string)  
+{"maybank", "cimb", "public_bank", "rhb"}  
+
+### (ii) For monthly repayment logic to trigger:  
+downpayment < car price  
+budget >= car price  
+(for car price, refer to car_model catalog above)
+
+------------------------------------------------------------------------
 
 ### 🔮 Next Steps (to try personally)
 
