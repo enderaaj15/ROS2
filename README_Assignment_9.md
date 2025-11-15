@@ -27,7 +27,7 @@ The structure of the package for this assignment is shown below:
 
 ## 🎯️ Function 
 
-This assigment will demonstrate tf2 application for broadcasting static and dynamic frames. To demonstrate this, I designed a horizontal-axis wind turbine. The specifications [Design Specifications of the Wind Turbine](https://github.com/enderaaj15/ROS2/edit/ROS-2-Assignments/README_Assignment_9.md#%EF%B8%8F%EF%B8%8F-design-specifications-of-the-wind-turbine) and frames [Constructing Frames ](#constructing-frames) of the turbine are detailed in the sections linked. 
+This assigment will demonstrate tf2 application for broadcasting static and dynamic frames. To demonstrate this, I designed a horizontal-axis wind turbine. The specifications and frames of the turbine are detailed in the later sections. 
 
 In the launch folder, the **windturbine_dynamic_frames_tf2.launch.py** file launches all the frames nodes and RViz2. This is achieved through a hierarchy of linked files:
 
@@ -80,8 +80,7 @@ The output is the same. Launch it using:
 
     ros2 launch raaj_dynamic_tf2_cpp turbine_rotating_tf2.launch.py 
     
-[Only use ros2 topic echo /tf will show output since its all in 1 node
-and uses transform_broadcaster]
+(Only use ros2 topic echo /tf will show output since its all in 1 node and uses transform_broadcaster)
 
 ros2 run rqt_tf_tree rqt_tf_tree
     
@@ -109,7 +108,7 @@ the center of the wind turbine tower.
 The important measurements for this assignment is shown in the table below:
     
 | Part | Dimension |
-| :---: | :--- |
+| :---: | :---: |
 | Hub height | 100m |
 | Rotor diameter | 140m |
 | Distance from hub to center of tower | 4m |
@@ -121,14 +120,14 @@ The important measurements for this assignment is shown in the table below:
 ###  (i) Table of Frames Specification 
 
 | Parent - Child | Type | Translation | Rotation |
-| :---: | :--- | :--- | :--- |
+| :---: | :---: | :---: | :---: |
 | world - tower_base | Static | (0, 0, 0) | (0,0,0) |
 | tower_base - tower_mid | Static | (0, 0, 2.5) | (0,0,0) |
 | tower_mid - nacelle | Dynamic | (0, 0, 2.5) | (0.0, 0.0, yaw) |
 | nacelle - hub | Dynamic | (0.2, 0, 0) | (hub_angle, 0.0, 0.0) |
-| hub - blades | :--- | Static | (0.5, 0.0, radius) | (0,0,0) |
-|              | :--- |        | (0.5,  radius*sqrt(3)/2.0, -radius/2.0) | (0,0,0) |
-|              | :--- |        | (0.5, -radius*sqrt(3)/2.0, -radius/2.0) | (0,0,0) |
+| hub - blades | blade1 (static) | (0.5, 0.0, radius) | (0,0,0) |
+|              | blade2 (static) | (0.5,  radius*sqrt(3)/2.0, -radius/2.0) | (0,0,0) |
+|              | blade3 (static) | (0.5, -radius*sqrt(3)/2.0, -radius/2.0) | (0,0,0) |
     
 ###  (ii) Equations for the yaw, hub_angle, and radius
 
