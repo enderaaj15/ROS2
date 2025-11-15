@@ -32,7 +32,7 @@ This assigment will demonstrate tf2 application for broadcasting static and dyna
 In the launch folder, the **windturbine_dynamic_frames_tf2.launch.py** file launches all the frames nodes and RViz2. This is achieved through a hierarchy of linked files:
 
   → **windturbine_dynamic_frames_tf2.launch.py** (contains dynamic frames executables)  
-  → links to **windturbine_fixed_frame_tf2.launch.py** (contains static frames)  
+  → links to **windturbine_fixed_frame_tf2.launch.py** (contains static frames executables)  
   → links to **windturbine_base_tf2.launch.py** (contains the tower_base executable and the RViz executable)
     
 Additionally, a separate node was created to include all frames in 1 file **(turbine_rotating2.cpp)**. For this, just launch **turbine_rotating_tf2.launch.py** and it shows all frames in RViz2.
