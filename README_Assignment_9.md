@@ -31,9 +31,9 @@ This assigment will demonstrate tf2 application for broadcasting static and dyna
 
 In the launch folder, the **windturbine_dynamic_frames_tf2.launch.py** file launches all the frames nodes and RViz2. This is achieved through a hierarchy of linked files:
 
-  → **windturbine_dynamic_frames_tf2.launch.py** (contains dynamic frames executables)
-  → links to **windturbine_fixed_frame_tf2.launch.py** (contains static frames)
-  → links to **windturbine_base_tf2.launch.py** (contains the tower_base executable and the RViz executable)"
+  → **windturbine_dynamic_frames_tf2.launch.py** (contains dynamic frames executables)  
+  → links to **windturbine_fixed_frame_tf2.launch.py** (contains static frames)  
+  → links to **windturbine_base_tf2.launch.py** (contains the tower_base executable and the RViz executable)"  
     
 Additionally, a separate node was created to include all frames in 1 file **(turbine_rotating2.cpp)**. For this, just launch **turbine_rotating_tf2.launch.py** and it shows all frames in RViz2.
 
@@ -61,9 +61,7 @@ Additionally, a separate node was created to include all frames in 1 file **(tur
 
 To launch the wind turbine's static and dynamic nodes:
 
-    ```
     ros2 launch raaj_dynamic_tf2_cpp windturbine_dynamic_frames_tf2.launch.py
-    ```
     
 Expected output:
     
@@ -72,19 +70,15 @@ them. You will be able to see a structure of a wind turbine with a
 rotating hub (which rotates the blades) and a yawing nacelle 
 (which yaws the hub).
     
-[Can use ros2 topic echo /tf and ros2 topic echo/tf_static for this
-    since separate nodes, and static uses static_transform_broadcaster
-    while dynamic uses transform_broadcaster]
-    
+(Can use ros2 topic echo /tf and ros2 topic echo/tf_static for this since separate nodes, and static uses static_transform_broadcaster while dynamic uses transform_broadcaster)
+
     
 ### (B) All frames in 1 node
 
 I also created a node with the same frames as (A), but in a single file.
 The output is the same. Launch it using:
 
-    ```
     ros2 launch raaj_dynamic_tf2_cpp turbine_rotating_tf2.launch.py 
-    ```
     
 [Only use ros2 topic echo /tf will show output since its all in 1 node
 and uses transform_broadcaster]
@@ -140,7 +134,7 @@ The important measurements for this assignment is shown in the table below:
 
 Nacelle Yaw: yaw = 0.5 * sin(t/5.0); (Yaw about z-axis)
     
-Hub Rotation: hub_angle = 2.0 * t (radians/sec); (Rotate around x-axis)
+Hub Rotation: hub_angle = 2.0 * t; (radians/sec) (Rotate around x-axis)
 
 Blades Placement: radius = 3.5; (3 blades, 120 degrees apart)
     
@@ -149,5 +143,3 @@ Blades Placement: radius = 3.5; (3 blades, 120 degrees apart)
 ### 🔮 Next Steps (to try personally)
 
 -   Make complex frames with complex movements
-
-In the launch folder the launch file, windturbine_dynamic_frames_tf2.launch.py will launch all the frames and also RViz2. This launch file contains the dynamic frames executables, and is linked to windturbine_fixed_frame_tf2.launch.py, which contains the static frames, which further links to windturbine_base_tf2.launch.py, which contain the tower_base executable and rviz executable.
