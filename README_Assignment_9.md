@@ -27,7 +27,7 @@ The structure of the package for this assignment is shown below:
 
 ## 🎯️ Function 
 
-This assigment will demonstrate tf2 application for broadcasting static and dynamic frames. To demonstrate this, I designed a horizontal-axis wind turbine. The specifications [Design Specifications of the Wind Turbine](#design-specifications-of-the-wind-turbine) and frames [Constructing Frames ](#constructing-frames) of the turbine are detailed in the sections linked. 
+This assigment will demonstrate tf2 application for broadcasting static and dynamic frames. To demonstrate this, I designed a horizontal-axis wind turbine. The specifications [Design Specifications of the Wind Turbine](https://github.com/enderaaj15/ROS2/edit/ROS-2-Assignments/README_Assignment_9.md#%EF%B8%8F%EF%B8%8F-design-specifications-of-the-wind-turbine) and frames [Constructing Frames ](#constructing-frames) of the turbine are detailed in the sections linked. 
 
 In the launch folder, the **windturbine_dynamic_frames_tf2.launch.py** file launches all the frames nodes and RViz2. This is achieved through a hierarchy of linked files:
 
