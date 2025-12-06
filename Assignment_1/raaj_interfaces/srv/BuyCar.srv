@@ -1,0 +1,14 @@
+# Requests
+
+string car_make
+float64 budget
+string car_model
+
+---
+
+# Responses
+
+string car_make
+float64 budget
+string car_model
+string message
