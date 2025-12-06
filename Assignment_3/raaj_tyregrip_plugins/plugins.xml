@@ -1,0 +1,17 @@
+<library path="raaj_tyregrip_plugins">
+  <class type="raaj_tyregrip_plugins::DryWeather" base_class_type="raaj_tyregrip_base::Weather">
+  </class>
+  <class type="raaj_tyregrip_plugins::WetWeather" base_class_type="raaj_tyregrip_base::Weather">
+  </class>
+  <class type="raaj_tyregrip_plugins::SnowWeather" base_class_type="raaj_tyregrip_base::Weather">
+  </class>
+    <description>These are plugins for Dry, Wet, and Snow Weather.</description>
+
+  <class type="raaj_tyregrip_plugins::UHPTyre" base_class_type="raaj_tyregrip_base::Tyre">
+  </class>
+  <class type="raaj_tyregrip_plugins::EcoTyre" base_class_type="raaj_tyregrip_base::Tyre">
+  </class>
+  <class type="raaj_tyregrip_plugins::WinterTyre" base_class_type="raaj_tyregrip_base::Tyre">
+  </class>
+    <description>These are plugins for Ultra High Perfomance (UHP), Eco, and Winter type tyres.</description>
+</library>
