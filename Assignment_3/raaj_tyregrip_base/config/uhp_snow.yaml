@@ -1,0 +1,5 @@
+/traction_node:
+  ros__parameters:
+    weather_plugin: "raaj_tyregrip_plugins::SnowWeather"
+    tyre_plugin: "raaj_tyregrip_plugins::UHPTyre"
+    speed: 60.0
