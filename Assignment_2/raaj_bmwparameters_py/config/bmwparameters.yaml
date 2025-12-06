@@ -1,0 +1,10 @@
+/buycar_param_node:
+  ros__parameters:
+    bank: public_bank
+    budget: 500000
+    car_color: silver
+    car_model: BMW 330Li M Sport
+    downpayment: 20000
+    loan_years: 9
+    use_sim_time: false
+
