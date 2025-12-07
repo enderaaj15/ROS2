@@ -1,0 +1,9 @@
+# Goal
+string song_name
+bool skip_current
+---
+# Result
+string result_message
+---
+# Feedback
+float32 progress_percent
