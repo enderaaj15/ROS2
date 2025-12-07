@@ -1,2 +1,2 @@
-The following projects showcase the ROS2 skills I acquired during my training at Move Robotic Sdn Bhd, as part of the Malaysian Technology Development Corporation (MTDC) K-Youth Programme initiative by Khazanah Nasional Berhad. I worked on 12 projects, with assignments 1-9 being individual while assignments 10-12 are team projects.
-I am currently adding/polishing each assignments before uploading them here. Expect all 12 assignments to be here soon!
+"The following projects showcase the ROS2 skills I acquired during my training at Move Robotic Sdn Bhd, completed as part of the Malaysian Technology Development Corporation (MTDC) K-Youth Programme, an initiative by Khazanah Nasional Berhad.
+I successfully completed twelve assignments in total: projects 1-9 were individual efforts, while projects 10-12 were collaborative team projects. I am currently refining each assignment for presentation and expect all twelve to be uploaded here shortly."
