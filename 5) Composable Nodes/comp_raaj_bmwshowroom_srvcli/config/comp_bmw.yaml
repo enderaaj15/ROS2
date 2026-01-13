@@ -1,0 +1,9 @@
+/buycar_server:
+  ros__parameters:
+    budget: 350000
+    downpayment: 40000
+    loan_years: 8
+    car_model: "BMW 330i M Sport"
+    car_color: "silver"
+    bank: "public_bank"
+
