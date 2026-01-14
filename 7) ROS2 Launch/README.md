@@ -28,7 +28,7 @@ The structure of the packages for this assignment are shown below:
     ├── LICENSE
     └── README.md
 ```
-## 🎯️ Function of the Parameter Monitoring Node
+## 🎯️ Function of the Launch File
 This assigment will demonstrate a ROS 2 launch application. Specifically, 
 a previous assignment will be launch:
 **(Assignment 4, package name: raajaction_musicplayer_py)**
