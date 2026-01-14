@@ -127,6 +127,8 @@ Can also load parameters using .yaml file in **Terminal 3**:
     
     ros2 param load /buycar_param_node ~/ros2_ws_assignment1/src/raaj_bmwparameters_cpp/config/comp_bmw.yaml
 
+**Note**: Change ros2_ws_assignment1 to your workspace name.
+
 ------------------------------------------------------------------------
 
 ## 🖥️ Monitoring Parameters
